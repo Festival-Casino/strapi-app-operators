@@ -44,7 +44,7 @@ export default {
       })
     );
 
-    const flatFiles = uploaded.flat();
+    // const flatFiles = uploaded.flat();
 
     const metadata = await Promise.all(
       uploaded.map((file) => {
@@ -62,7 +62,8 @@ export default {
     );
 
     return ctx.send({
-      message: 'File(s) uploaded into the correct folder.',
+      status: 200,
+      message: 'Your file(s) have been uploaded and stored in the designated folder.',
       folder: { id: folder.id, name: folder.name },
       files: uploaded,
       metadata,
