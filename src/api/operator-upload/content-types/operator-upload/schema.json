@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "operator_uploads",
+  "info": {
+    "singularName": "operator-upload",
+    "pluralName": "operator-uploads",
+    "displayName": "operator-upload"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "operatorName": {
+      "type": "string"
+    },
+    "contactName": {
+      "type": "string"
+    },
+    "contactNumber": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "files": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "folderName": {
+      "type": "string"
+    }
+  }
+}
