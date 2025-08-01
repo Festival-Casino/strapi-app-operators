@@ -10,7 +10,7 @@ export default (config: UserConfig) => {
     server: {
       host: true,
       port: 1337,
-      allowedHosts: 'all',
+      origin: ['http://localhost:3000', 'https://admin.gamevenues.com'],
     },
   });
 };
