@@ -24,7 +24,9 @@ export default defineConfig({
     },
   },
   server: {
-    allowedHosts: ['usadmin.gamevenues.com'], // ✅ Fix for host restriction
-    host: true, // 👈 allows external access (important if using a custom domain or reverse proxy)
+    host: true, // Accept all IPs and external hosts
+    port: 1337,
+    allowedHosts: ['admin.gamevenues.com'], // ✅ Add your domain here
+    strictPort: true,
   },
 });
