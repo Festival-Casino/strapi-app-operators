@@ -1,6 +1,7 @@
-import { mergeConfig, type UserConfig } from 'vite';
+import { mergeConfig } from 'vite';
 
-export default (config: UserConfig) => {
+/** @type {import('vite').UserConfig} */
+export default (config) => {
   return mergeConfig(config, {
     resolve: {
       alias: {
@@ -8,9 +9,9 @@ export default (config: UserConfig) => {
       },
     },
     server: {
-      host: true,
+      host: true, // Allow external access (localhost, IP, etc.)
       port: 1337,
-      origin: ['http://localhost:3000', 'https://admin.gamevenues.com'],
+      allowedHosts: ['localhost', 'admin.gamevenues.com'], // ✅ This is the correct key
     },
   });
 };
