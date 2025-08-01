@@ -9,7 +9,7 @@
 export default ({ env }) => ({
   host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),
-  url: env('PUBLIC_URL', 'https://admin.gamevenues.com'), // ✅ Add this
+  url: env('PUBLIC_URL', 'http://localhost:1337'), // ✅ Add this
   app: {
     keys: env.array('APP_KEYS'),
   },
