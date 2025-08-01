@@ -13,6 +13,6 @@ export default ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
-  allowedHosts: ['usadmin.gamevenues.com'], // ✅ add this
+  allowedHosts: ['admin.gamevenues.com'], // ✅ add this
 });
 
