@@ -8,5 +8,8 @@ export default (config: UserConfig) => {
         '@': '/src',
       },
     },
+    server: {
+      allowedHosts: ['usadmin.gamevenues.com'], // ✅ Allow this host
+    },
   });
 };
