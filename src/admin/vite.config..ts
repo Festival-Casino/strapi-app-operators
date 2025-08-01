@@ -14,19 +14,13 @@
 //   });
 // };
 
-
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  resolve: {
-    alias: {
-      '@': '/src',
-    },
-  },
   server: {
-    host: true, // Accept all IPs and external hosts
-    port: 1337,
-    allowedHosts: ['admin.gamevenues.com'], // ✅ Add your domain here
-    strictPort: true,
+    host: true, // Allow external access (0.0.0.0)
+    port: 1337, // Or your preferred port
+    allowedHosts: ['admin.gamevenues.com'], // ✅ Fix the error
   },
 });
+
