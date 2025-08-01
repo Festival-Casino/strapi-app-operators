@@ -9,7 +9,7 @@ export default (config: UserConfig) => {
       },
     },
     server: {
-      allowedHosts: ['usadmin.gamevenues.com'], // ✅ Allow this host
+      allowedHosts: ['admin.gamevenues.com'], // ✅ Allow this host
     },
   });
 };
